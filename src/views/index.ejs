@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <style>
+    
+      @import "https://fonts.googleapis.com/css?family=Roboto+Mono:100";
+      a:link{
+      color:none;
+      text-decoration:none;
+    }
+      html,
+      body {
+        font-family: "Roboto Mono", monospace;
+        background: #212121;
+        height: 100%;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .text {
+        font-weight: 100;
+        font-size: 28px;
+        color: #fafafa;
+      }
+      .dud {
+        color: #757575;
+      }
+      $teal: #1ecd97;
+
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100px;
+        width: 200px;
+        margin: auto;
+      }
+
+      .button {
+        background-color: transparent;
+        border: 2px solid $teal;
+        border-radius: 4px;
+        display: inline-block;
+        color: $teal;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        height: 40px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        margin: 5px;
+        overflow: hidden;
+        padding: 0 22px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $teal;
+        }
+      }
+
+      .roll-text {
+        display: block;
+        position: relative;
+        transition: all 420ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .roll-text:last-child {
+        color: #fff;
+      }
+
+      .rollover:hover .roll-text:first-child {
+        margin-top: -38px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text"><%= soz %></div>
+    </div>
+    <div class="wrap" style="margin-bottom:0;">
+      <a class="button rollover" href="/soz-ekle" style="font-size:20px;padding-left:60px">
+        <span class="roll-text">Söz</span>
+        <span class="roll-text">Ekle</span>
+      </a>
+    </div>
+  </body>
+</html>
