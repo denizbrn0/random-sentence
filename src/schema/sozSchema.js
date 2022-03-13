@@ -8,4 +8,4 @@ const schema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("sozler", schema);
+module.exports = mongoose.model("sozlers", schema);
